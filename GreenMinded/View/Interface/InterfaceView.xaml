@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="GreenMinded.View.Interface.InterfaceView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GreenMinded.View.Interface"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock Text="{Binding Question}" HorizontalAlignment="Left" FontSize="35" Margin="183,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="447"/>
+        <TextBlock Text="{Binding Response_left}" HorizontalAlignment="Left" FontSize="35" Margin="62,289,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="68" Width="210"/>
+        <TextBlock Text="{Binding Response_right}" HorizontalAlignment="Left" FontSize="35" Margin="501,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="210"/>
+    </Grid>
+</UserControl>

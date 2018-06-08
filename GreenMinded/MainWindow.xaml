@@ -1,0 +1,28 @@
+﻿<Window x:Class="GreenMinded.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenMinded"
+        xmlns:Interface="clr-namespace:GreenMinded.View.Interface"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="514.226" Width="919.216">
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type Interface:InterfaceViewModel}">
+            <Interface:InterfaceView/>
+        </DataTemplate>
+
+    </Window.Resources>
+    <Grid Background="#FF232222">
+
+
+        <Grid HorizontalAlignment="Left" Height="485" Margin="0,0,-0.2,-0.2" VerticalAlignment="Top" Width="913" Background="#FF282A2C">
+            <ContentControl Content="{Binding CurrentPageViewModel}" Margin="10,10,0,0" >
+            </ContentControl>
+
+        </Grid>
+
+    </Grid>
+
+</Window>
