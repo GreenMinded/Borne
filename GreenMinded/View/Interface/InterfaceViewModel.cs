@@ -15,7 +15,7 @@ namespace GreenMinded.View.Interface
         private string name;
         public string Name { get => name; set => name = value; }
 
-        public List<SPI_QuestionAnswer_Result> ListQuestions { get => listQuestions; set => listQuestions = value; }
+        public List<SPI_QuestionAnswer_Result> ListQuestions { get => listQuestions; set => listQuestions = value; } // Ajout d'un OnPropertyChange
         public IList<SPI_QuestionAnswer_Result> ListQuestionAnswer { get => listQuestionAnswer; set => listQuestionAnswer = value; }
         public IList<stations> ListStation { get => listStation; set => listStation = value; }
 
@@ -70,14 +70,22 @@ namespace GreenMinded.View.Interface
             }
         }
 
-        //public void ChangeQuestion()
-        //{
-        //    if(date_Start == DateTime.Now)
-        //    {
-                
-        //    }
+        public void ChangeQuestion()
+        {
+            using (APIGreenMinded.Service1Client api = new APIGreenMinded.Service1Client())
+            {
+                listQuestionAnswer = api.GetQuestionAnswer();
+            }
+            foreach (SPI_QuestionAnswer_Result queans in listQuestionAnswer)
+            {
+                if (DateTime.Now >= queans.date_start && DateTime.Now <= queans.date_end)
+                {
+                    ListQuestions.Clear();
+                    AccessStation();
+                }
+            }
 
-        //}
+        }
 
 
         public void AccessStation()
@@ -95,7 +103,12 @@ namespace GreenMinded.View.Interface
             if(sta.mac_address == GetMacAddress().ToString())
                 {
                     foreach(SPI_QuestionAnswer_Result queans in listQuestionAnswer) {
-                        ListQuestions.Add(queans);
+
+                        if (DateTime.Now >= queans.date_start && DateTime.Now <= queans.date_end)
+                        {
+                            ListQuestions.Add(queans);
+                        }
+                        
                     }
                 }
               }
