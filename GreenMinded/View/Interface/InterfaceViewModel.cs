@@ -15,7 +15,7 @@ namespace GreenMinded.View.Interface
         private string name;
         public string Name { get => name; set => name = value; }
 
-        public List<SPI_QuestionAnswer_Result> ListQuestions { get => listQuestions; set => listQuestions = value; } // Ajout d'un OnPropertyChange
+        public List<SPI_QuestionAnswer_Result> ListQuestions { get => listQuestions; set { listQuestions = value; OnPropertyChanged("ListQuestions"); } } // Ajout d'un OnPropertyChange
         public IList<SPI_QuestionAnswer_Result> ListQuestionAnswer { get => listQuestionAnswer; set => listQuestionAnswer = value; }
         public IList<stations> ListStation { get => listStation; set => listStation = value; }
 
@@ -30,7 +30,7 @@ namespace GreenMinded.View.Interface
         }
 
 
-
+        #region Properties Question
         public string _Question;
         public string Question
         {
@@ -69,6 +69,7 @@ namespace GreenMinded.View.Interface
                 return _Response_right;
             }
         }
+        #endregion
 
         public void ChangeQuestion()
         {
@@ -127,6 +128,18 @@ namespace GreenMinded.View.Interface
             }
             return null;
         }
+
+        /* Fonctionne toutes les 5 secondes avec un timer en asynchrone( Timer à rajouter ) */
+        public void DateActualise()
+        {
+            if (DateTime.Now > ListQuestions[0].date_end)
+            {
+                ChangeQuestion();
+            }
+        }
+
+        /* Deux AsyncTask pour gérer le count des capteurs gauche et droit */
+        
 
     }
 }

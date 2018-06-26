@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock Text="{Binding Question}" HorizontalAlignment="Left" FontSize="35" Margin="183,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="447"/>
-        <TextBlock Text="{Binding Response_left}" HorizontalAlignment="Left" FontSize="35" Margin="62,289,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="68" Width="210"/>
-        <TextBlock Text="{Binding Response_right}" HorizontalAlignment="Left" FontSize="35" Margin="501,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="210"/>
+        <TextBlock Text="{Binding Question}" Foreground="AntiqueWhite" HorizontalAlignment="Left" FontSize="35" Margin="183,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="447"/>
+        <TextBlock Text="{Binding Response_left}" Foreground="AntiqueWhite" HorizontalAlignment="Left" FontSize="35" Margin="62,289,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="68" Width="210"/>
+        <TextBlock Text="{Binding Response_right}" Foreground="AntiqueWhite" HorizontalAlignment="Left" FontSize="35" Margin="501,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="210"/>
     </Grid>
 </UserControl>

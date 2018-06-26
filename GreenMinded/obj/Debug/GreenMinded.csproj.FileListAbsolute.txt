@@ -34,3 +34,7 @@ C:\Users\romai\OneDrive\Desktop\WorkspaceGreen\Borne\GreenMinded\obj\Debug\Green
 C:\Users\romai\OneDrive\Desktop\WorkspaceGreen\Borne\GreenMinded\obj\Debug\GreenMinded.csproj.CoreCompileInputs.cache
 C:\Users\romai\OneDrive\Desktop\WorkspaceGreen\Borne\GreenMinded\obj\Debug\GreenMinded.exe
 C:\Users\romai\OneDrive\Desktop\WorkspaceGreen\Borne\GreenMinded\obj\Debug\GreenMinded.pdb
+C:\Users\romai\OneDrive\Desktop\WorkspaceGreen\Borne\GreenMinded\bin\Debug\GreenMinded.exe.manifest
+C:\Users\romai\OneDrive\Desktop\WorkspaceGreen\Borne\GreenMinded\bin\Debug\GreenMinded.application
+C:\Users\romai\OneDrive\Desktop\WorkspaceGreen\Borne\GreenMinded\obj\Debug\GreenMinded.exe.manifest
+C:\Users\romai\OneDrive\Desktop\WorkspaceGreen\Borne\GreenMinded\obj\Debug\GreenMinded.application

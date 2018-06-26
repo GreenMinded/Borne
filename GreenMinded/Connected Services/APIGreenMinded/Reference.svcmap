@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="49c92ddd-7b4c-4767-98f2-f1e3478ec4c5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d565ec23-5add-40af-ad90-acfb8f8a14e4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:64781/Service1.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://anxium.fr:2060/Service1.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="87cfa1c5-5e94-4588-bfe1-aeb4c6716f31" SourceId="1" SourceUrl="http://localhost:64781/Service1.svc?xsd=xsd0" />
-    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="37bfe666-ce11-4e96-838a-3f8f8184db51" SourceId="1" SourceUrl="http://localhost:64781/Service1.svc?xsd=xsd2" />
-    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="51ef956e-091a-4cc7-8e41-710f5a360353" SourceId="1" SourceUrl="http://localhost:64781/Service1.svc?xsd=xsd1" />
-    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="1b9ecc9f-5e26-4104-8a40-fa85f3038f09" SourceId="1" SourceUrl="http://localhost:64781/Service1.svc?wsdl" />
-    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="8ae2d767-927b-4536-a3ee-818b6c5ebda0" SourceId="1" SourceUrl="http://localhost:64781/Service1.svc?disco" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="0d5c382c-5b18-447b-b03b-0c02dcebf6d2" SourceId="1" SourceUrl="http://anxium.fr:2060/Service1.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="ddabd83d-f31e-409e-b27e-9491268ceeed" SourceId="1" SourceUrl="http://anxium.fr:2060/Service1.svc?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="ee686a41-b8b7-4b44-af53-3422b27091ce" SourceId="1" SourceUrl="http://anxium.fr:2060/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="c8beeeb7-ee56-4623-9b3c-d2b5c2cee39f" SourceId="1" SourceUrl="http://anxium.fr:2060/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="3567dd64-c86a-4137-92b9-ea45ffac107a" SourceId="1" SourceUrl="http://anxium.fr:2060/Service1.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
